@@ -1,0 +1,141 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #feede5;
+
+  --color-primary: #27aae1;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+
+
+  --block-color-1: #1c7ea8;
+  --block-color-2: #74b5da;
+
+  --block2-color-1: #4e884b;
+  --block2-color-2: #94b17e;
+
+  --block3-color-1: #ec7750;
+  --block3-color-2: #f8a482;
+
+
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+} 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quilt, .quilt2, .quilt3 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px;
+}
+
+
+.block, .q2block, .q3block {
+    width: 0; height: 0;
+  border-style: solid;
+  border-width: 40px;
+  /* border-color: var(--block-color-1) var(--block-color-2) var(--block-color-3) var(--block-color-4); */
+  transform: rotate(0deg);
+}
+
+#block1, #block2, #block3, #block4, #block5, #block6, #block7, #block8, #block9, #block10, #block11, #block12, #block13, #block14, #block15, #block16, #block17, #block18, #block19, #block20, #block21, #block22, #block23, #block24, #block25, #block26, #block27, #block28, #block29, #block30, #block31, #block32, #block33, #block34, #block35, #block36, #block37, #block38, #block39, #block40  {
+  border-color: var(--block-color-1) var(--block-color-2) var(--block-color-2) var(--block-color-1);
+}
+
+#block1.clicked, #block2.clicked, #block3.clicked, #block4.clicked, #block5.clicked, #block6.clicked, #block7.clicked, #block8.clicked, #block9.clicked, #block10.clicked, #block11.clicked, #block12.clicked, #block13.clicked, #block14.clicked, #block15.clicked, #block16.clicked, #block17.clicked, #block18.clicked, #block19.clicked, #block20.clicked, #block21.clicked, #block22.clicked, #block23.clicked, #block24.clicked, #block25.clicked, #block26.clicked, #block27.clicked, #block28.clicked, #block29.clicked, #block30.clicked, #block31.clicked, #block32.clicked, #block33.clicked, #block34.clicked, #block35.clicked, #block36.clicked, #block37.clicked, #block38.clicked, #block39.clicked, #block40.clicked {
+  border-color: var(--block-color-2) var(--block-color-2) var(--block-color-1) var(--block-color-1);
+}
+
+
+#block1[data-playhtml-hover], #block2[data-playhtml-hover], #block3[data-playhtml-hover], #block4[data-playhtml-hover], #block5[data-playhtml-hover], #block6[data-playhtml-hover], #block7[data-playhtml-hover], #block8[data-playhtml-hover], #block9[data-playhtml-hover], #block10[data-playhtml-hover], #block11[data-playhtml-hover], #block12[data-playhtml-hover], #block13[data-playhtml-hover], #block14[data-playhtml-hover], #block15[data-playhtml-hover], #block16[data-playhtml-hover], #block17[data-playhtml-hover], #block18[data-playhtml-hover], #block19[data-playhtml-hover], #block20[data-playhtml-hover], #block21[data-playhtml-hover], #block22[data-playhtml-hover], #block23[data-playhtml-hover], #block24[data-playhtml-hover], #block25[data-playhtml-hover], #block26[data-playhtml-hover], #block27[data-playhtml-hover], #block28[data-playhtml-hover], #block29[data-playhtml-hover], #block30[data-playhtml-hover], #block31[data-playhtml-hover], #block32[data-playhtml-hover], #block33[data-playhtml-hover], #block34[data-playhtml-hover], #block35[data-playhtml-hover], #block36[data-playhtml-hover], #block37[data-playhtml-hover], #block38[data-playhtml-hover], #block39[data-playhtml-hover], #block40[data-playhtml-hover] {
+  border-color: var(--block-color-1) var(--block-color-2) var(--block-color-1) var(--block-color-2);
+}
+
+
+/* quilt 2 */
+
+
+#q2block1, #q2block2, #q2block3, #q2block4, #q2block5, #q2block6, #q2block7, #q2block8, #q2block9, #q2block10, #q2block11, #q2block12, #q2block13, #q2block14, #q2block15, #q2block16, #q2block17, #q2block18, #q2block19, #q2block20, #q2block21, #q2block22, #q2block23, #q2block24, #q2block25, #q2block26, #q2block27, #q2block28, #q2block29, #q2block30, #q2block31, #q2block32, #q2block33, #q2block34, #q2block35, #q2block36, #q2block37, #q2block38, #q2block39, #q2block40 {
+  border-color: var( --block2-color-1) var( --block2-color-2) var( --block2-color-2) var( --block2-color-1);
+}
+
+#q2block1.clicked, #q2block2.clicked, #q2block3.clicked, #q2block4.clicked, #q2block5.clicked, #q2block6.clicked, #q2block7.clicked, #q2block8.clicked, #q2block9.clicked, #q2block10.clicked, #q2block11.clicked, #q2block12.clicked, #q2block13.clicked, #q2block14.clicked, #q2block15.clicked, #q2block16.clicked, #q2block17.clicked, #q2block18.clicked, #q2block19.clicked, #q2block20.clicked, #q2block21.clicked, #q2block22.clicked, #q2block23.clicked, #q2block24.clicked, #q2block25.clicked, #q2block26.clicked, #q2block27.clicked, #q2block28.clicked, #q2block29.clicked, #q2block30.clicked, #q2block31.clicked, #q2block32.clicked, #q2block33.clicked, #q2block34.clicked, #q２block35.clicked, #q2block36.clicked, #q2block37.clicked, #q2block38.clicked, #q2block39.clicked, #q2block40.clicked {
+  border-color: var( --block2-color-2) var( --block2-color-2) var( --block2-color-1) var( --block2-color-1);
+}
+
+
+#q2block1[data-playhtml-hover], #q2block2[data-playhtml-hover], #q2block3[data-playhtml-hover], #q2block4[data-playhtml-hover], #q2block5[data-playhtml-hover], #q2block6[data-playhtml-hover], #q2block7[data-playhtml-hover], #q2block8[data-playhtml-hover], #q2block9[data-playhtml-hover], #q2block10[data-playhtml-hover], #q2block11[data-playhtml-hover], #q2block12[data-playhtml-hover], #q2block13[data-playhtml-hover], #q2block14[data-playhtml-hover], #q2block15[data-playhtml-hover], #q2block16[data-playhtml-hover], #q2block17[data-playhtml-hover], #q2block18[data-playhtml-hover], #q2block19[data-playhtml-hover], #q2block20[data-playhtml-hover], #q2block21[data-playhtml-hover], #q2block22[data-playhtml-hover], #q2block23[data-playhtml-hover], #q2block24[data-playhtml-hover], #q2block25[data-playhtml-hover], #q2block26[data-playhtml-hover], #q2block27[data-playhtml-hover], #q2block28[data-playhtml-hover], #q2block29[data-playhtml-hover], #q2block30[data-playhtml-hover], #q2block31[data-playhtml-hover], #q2block32[data-playhtml-hover], #q2block33[data-playhtml-hover], #q2block34[data-playhtml-hover], #q2block35[data-playhtml-hover], #q2block36[data-playhtml-hover], #q2block37[data-playhtml-hover], #q2block38[data-playhtml-hover], #q2block39[data-playhtml-hover], #q2block40[data-playhtml-hover] {
+  border-color: var(--block2-color-1) var(--block2-color-2) var(--block2-color-1) var(--block2-color-2);
+} 
+
+
+
+
+
+
+/* quilt 3 */
+
+#q3block1, #q3block2, #q3block3, #q3block4, #q3block5, #q3block6, #q3block7, #q3block8, #q3block9, #q3block10, #q3block11, #q3block12, #q3block13, #q3block14, #q3block15, #q3block16, #q3block17, #q3block18, #q3block19, #q3block20, #q3block21, #q3block22, #q3block23, #q3block24, #q3block25, #q3block26, #q3block27, #q3block28, #q3block29, #q3block30, #q3block31, #q3block32, #q3block33, #q3block34, #q3block35, #q3block36, #q3block37, #q3block38, #q3block39, #q3block40 {
+  border-color: var( --block3-color-1) var( --block3-color-2) var( --block3-color-2) var( --block3-color-1);
+}
+
+#q3block1.clicked, #q3block2.clicked, #q3block3.clicked, #q3block4.clicked, #q3block5.clicked, #q3block6.clicked, #q3block7.clicked, #q3block8.clicked, #q3block9.clicked, #q3block10.clicked, #q3block11.clicked, #q3block12.clicked, #q3block13.clicked, #q3block14.clicked, #q3block15.clicked, #q3block16.clicked, #q3block17.clicked, #q3block18.clicked, #q3block19.clicked, #q3block20.clicked, #q3block21.clicked, #q3block22.clicked, #q3block23.clicked, #q3block24.clicked, #q3block25.clicked, #q3block26.clicked, #q3block27.clicked, #q3block28.clicked, #q3block29.clicked, #q3block30.clicked, #q3block31.clicked, #q3block32.clicked, #q3block33.clicked, #q3block34.clicked, #q3block35.clicked, #q3block36.clicked, #q3block37.clicked, #q3block38.clicked, #q3block39.clicked, #q3block40.clicked {
+  border-color: var( --block3-color-2) var( --block3-color-2) var( --block3-color-1) var( --block3-color-1);
+}
+
+
+#q3block1[data-playhtml-hover], #q3block2[data-playhtml-hover], #q3block3[data-playhtml-hover], #q3block4[data-playhtml-hover], #q3block5[data-playhtml-hover], #q3block6[data-playhtml-hover], #q3block7[data-playhtml-hover], #q3block8[data-playhtml-hover], #q3block9[data-playhtml-hover], #q3block10[data-playhtml-hover], #q3block11[data-playhtml-hover], #q3block12[data-playhtml-hover], #q3block13[data-playhtml-hover], #q3block14[data-playhtml-hover], #q3block15[data-playhtml-hover], #q3block16[data-playhtml-hover], #q3block17[data-playhtml-hover], #q3block18[data-playhtml-hover], #q3block19[data-playhtml-hover], #q3block20[data-playhtml-hover], #q3block21[data-playhtml-hover], #q3block22[data-playhtml-hover], #q3block23[data-playhtml-hover], #q3block24[data-playhtml-hover], #q3block25[data-playhtml-hover], #q3block26[data-playhtml-hover], #q3block27[data-playhtml-hover], #q3block28[data-playhtml-hover], #q3block29[data-playhtml-hover], #q3block30[data-playhtml-hover], #q3block31[data-playhtml-hover], #q3block32[data-playhtml-hover], #q3block33[data-playhtml-hover], #q3block34[data-playhtml-hover], #q3block35[data-playhtml-hover], #q3block36[data-playhtml-hover], #q3block37[data-playhtml-hover], #q3block38[data-playhtml-hover], #q3block39[data-playhtml-hover], #q3block40[data-playhtml-hover] {
+  border-color: var( --block3-color-1) var( --block3-color-2) var( --block3-color-1) var( --block3-color-2);
+} 
+
+
+
+
+/* Type */
+
+h1 {
+  color: var(--block-color-1);
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  margin: 0;
+}
+
+.emoji {
+  font-size:4em;
+}
+
+
+img {
+  max-width:50px;
+}
